@@ -92,7 +92,7 @@ const profileSchema = new Schema({
     },
     jobcode : {
         type : String,
-        required :true
+        //required :true
     }
 })
 

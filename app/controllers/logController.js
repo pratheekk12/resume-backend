@@ -16,18 +16,7 @@ logController.create =(req,res)=>{
     })
 }
 
-logController.getlog =(req,res)=>{
-    const id =req.params.id
-    console.log(req.params)
-    // Log.find({ profileID: id })
-    // .then((res)=>{
-    //     res.json(res)
-    // })
-    // .catch((err)=>{
-    //     console.log(err)
-    // })
-   
-}
+
 
 logController.show =(req,res)=>{
     const id = req.body.id

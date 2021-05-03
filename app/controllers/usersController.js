@@ -32,7 +32,9 @@ usersController.login =(req,res)=>{
                         }
                         const token = jwt.sign(tokenData,'grssl@123',{expiresIn : '2d'})
                         res.json({
-                            token : token
+                            token : token,
+                            userID:user._id,
+                            username
                         })
                     }else {
                         res.send('password does not match')

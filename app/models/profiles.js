@@ -86,6 +86,14 @@ const profileSchema = new Schema({
         type: String,  
         default: ""
     },
+    reference    : { 
+        type: String,  
+        default: ""
+    },
+    jobcode : {
+        type : String,
+        required :true
+    }
 })
 
 const Profile = mongoose.model('Profile', profileSchema)

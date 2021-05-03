@@ -8,6 +8,7 @@ profileController.create=(req,res)=>{
     const profile = new Profile(body)
     profile.save()
         .then((profile)=>{
+            console.log(profile._id)
             res.json(profile)
         })
         .catch((err)=>{

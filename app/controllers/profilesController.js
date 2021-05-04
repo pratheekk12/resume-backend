@@ -6,7 +6,7 @@ const profileController ={}
 profileController.create=(req,res)=>{
     const body = req.body
     const profile = new Profile(body)
-
+    console.log(profile," ai ma here")
     profile.save()
         .then((profile)=>{
             console.log(profile._id)

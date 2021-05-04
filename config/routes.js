@@ -17,7 +17,7 @@ router.post('/api/users/login',usersController.login)
 
 //Log Api routes
 router.post('/api/profile/log',logController.create)
-router.get('/api/profile/getlog',logController.show)
+router.post('/api/profile/getlog',logController.show)
 
 
 

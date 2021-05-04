@@ -17,7 +17,8 @@ const profileSchema = new Schema({
     email : {
         type : String,
         // required :true
-        required :[true,"email is mandatory"]
+        required : [true,'Your Profile has been Already Submitted'],
+        unique :true
     },
     Dob :{
         type : String,
@@ -25,7 +26,8 @@ const profileSchema = new Schema({
     },
     mobile :{
         type : String,
-        required :true
+        required : [true,'Your Profile has been Already Submitted'],
+        unique :true
     },
     alternatemob :{
         type : String,
@@ -93,8 +95,16 @@ const profileSchema = new Schema({
     jobcode : {
         type : String,
         //required :true
+    },
+    uniqID : {
+        type : String,
+        required : [true,'username is required'],
+        unique :true
     }
 })
+
+
+ 
 
 const Profile = mongoose.model('Profile', profileSchema)
 
